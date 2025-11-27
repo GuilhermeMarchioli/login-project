@@ -13,30 +13,30 @@
     <main>
         <img src="imgs/logo.png" alt="Logo">
         <h4>Faça o login para continuar acessando!</h4>
-        <form action="script.js">
+        <form action="">
             <p>
                 <label for="iemail">Email:</label>
-                <input type="email" id="iemail">
+                <input type="email" id="iemail" placeholder="Digite o seu e-mail" class="texbox" required>
             </p>
 
             <p>
                 <label for="isenha">Senha:</label>
-                <input type="password" id="isenha">
+                <input type="password" id="isenha" placeholder="Digite sua senha" class="textbox" required>
             </p>
 
             <p>
                 <label for="iconfirmar">Confirmar Senha:</label>
-                <input type="password" id="iconfirmar">
+                <input type="password" id="iconfirmar" placeholder="Digite a senha novamente" class="textbox" required>
             </p>
 
-            <p>
+            <p id="politica"> 
                 <label>
-                    <input type="checkbox" id="iaceito">
+                    <input type="checkbox" id="iaceito" required>
                     Aceito os <a href="#">Termos de privacidade</a>
                 </label>
             </p>
             
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" id="button">
         </form>
     </main>
 

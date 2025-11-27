@@ -28,6 +28,7 @@ body {
     align-items: center;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
 main {
@@ -45,8 +46,60 @@ main img {
 
 main h4 {
     margin-top: -70px;
+    color: rgb(135, 67, 199);
+    font-size: 1.2em;
 }
 
 main form {
     margin-top: 70px;
+}
+
+form p {
+    font-weight: bold;
+    color: rgb(175, 28, 243);
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(91, 55, 133);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.541);
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+input.texbox:focus {
+    scale: 105%;
+}
+
+p#politica {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p#politica input {
+    display: inline-block;
+    width: 20px;
+}
+
+input#button {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgb(143, 24, 199);
+}
+
+input#button:hover {
+    transform: scale(110%);
+    background-color: rgb(173, 69, 221);
 }
